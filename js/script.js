@@ -119,3 +119,13 @@ document.addEventListener("DOMContentLoaded", () => {
   generateCards("moviesGrid", contentData.slice(0, 5));
   generateCards("showsGrid", contentData.slice(5));
 });
+
+// Mobile Menu
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburgerButton = document.querySelector(".hamburger-button");
+  const mobileMenu = document.querySelector(".mobile-menu");
+
+  hamburgerButton.addEventListener("click", () =>
+    mobileMenu.classList.toggle("active")
+  );
+});
